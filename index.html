@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <!-- SELECTORES DE TEMA -->
+    <div id = "header">
+        <div class="flexrow-container">
+            <div class="standard-theme theme-selector"></div>
+            <div class="light-theme theme-selector"></div>
+            <div class="darker-theme theme-selector"></div>
+        </div>
+        <h1 id="title">Just do it.<div id="border"></div></h1>
+    </div>
+    <!-- API CLIMA -->
+    <div class="climaContainer">
+        <div id="caja1">
+          <h2 id="temperaturaValor"></h2>
+          <h2 id="temperaturaDescripcion"></h2>
+        </div>
+        <div id="caja2">
+          <h3 id="ubicacion"></h3>
+          <img id="iconoAnimado" src="" alt="" height="100" width="100">
+        </div>
+        <div id="caja3">
+          <h4>Velocidad del viento</h4>
+          <h4 id="vientoVelocidad"></h4>
+        </div>
+    </div>
+    <!-- FORMULARIO -->
+    <div id="form">
+        <form>
+            <input class="todo-input" type="text" placeholder="Ingresa una tarea">
+            <button class="todo-btn" type="submit">Añadir</button>
+        </form>
+    </div>
+    <!-- FECHA Y HORA -->
+    <div>
+        <p><span id="datetime"></span></p>
+    </div>
+    <!-- LISTA DE TAREAS -->
+    <div id="myUnOrdList">
+        <ul class="todo-list"></ul>
+    </div>
+    <!-- SCRIPTS JS -->
+    <script src="JS/main.js" type="text/javascript"></script>
+    <script src="JS/API.js" type="text/javascript"></script>
+    <script src="JS/time.js"></script>
+</body>
+</html>
